@@ -95,6 +95,6 @@ jobs:
  
           -Danypoint.businessGroup="fdb7171e-1a77-43bd-a4f2-4a075311b63b" \
  
-          -Denv="Dev" \
+          -Denv="Sandbox" \
  
           -Dappname="orderdetails-cicd" 
