@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="orderdetails-cicdFlow" doc:id="7fe4bd60-9a6f-4ce8-adbd-3a709fd285a5" >
+		<http:listener doc:name="Listener" doc:id="54670905-ca00-4ade-94a0-09ad95382f26" config-ref="HTTP_Listener_config" path="/orders"/>
+		<ee:transform doc:name="Transform Message" doc:id="3d356ca9-4fcd-4f01-a418-9d05496c8da5" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+[
+	{
+		oid : 1021,
+		item : "Apples",
+		price : 200,
+		c_name : "Lavanya",
+		phone : 99999,
+		location : "Guntur"
+	},
+	{
+		oid : 1022,
+		item : "Chocolates",
+		price : 200,
+		c_name : "Madhuri",
+		phone : 98999,
+		location : "Guntur"
+	},
+	{
+		oid : 1023,
+		item : "Biscuits",
+		price : 300,
+		c_name : "Sindhu",
+		phone : 97999,
+		location : "Guntur"
+	}	
+]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="c987e37a-92d9-4eb5-a9e0-1b9951f74bce" message="#[payload]"/>
+	</flow>
+</mule>
