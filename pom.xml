@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
-	<artifactId>cicd20-v3</artifactId>
-	<version>1.0.6</version>
+	<artifactId>cicd20-v4</artifactId>
+	<version>1.0.7</version>
 	<packaging>mule-application</packaging>
 
 	<name>cicd20-v3</name>
@@ -106,6 +106,7 @@
 	</pluginRepositories>
 
 </project>
+
 
 
 
