@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
-	<artifactId>orderdetails-cicd-v1</artifactId>
-	<version>1.0.4</version>
+	<groupId>com.mycompany</groupId>
+	<artifactId>cicd20</artifactId>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
-	<name>orderdetails-cicd</name>
+	<name>cicd20</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,37 +32,37 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-<cloudhub2Deployment>
-<uri>https://anypoint.mulesoft.com</uri>
-<provider>MC</provider>
-<muleVersion>4.9.11</muleVersion>
-<server>anypoint-exchange-v3</server>
-<username>JahnaviJan</username>
-<password>Jahnavi@2002</password>
-<businessGroupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</businessGroupId>
-<environment>Sandbox</environment>
-<target>Cloudhub-US-East-2</target>
-<applicationName>orderdetails-cicd</applicationName>
-<replicas>1</replicas>
-<vCores>0.1</vCores>
-<deploymentSettings>
-<lastMileSecurity>false</lastMileSecurity>
-<forwardSslSession>false</forwardSslSession>
-<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
-</deploymentSettings>
-</cloudhub2Deployment>
-</configuration>
+					<cloudhub2Deployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<provider>MC</provider>
+						<muleVersion>4.9.11</muleVersion>
+						<server>anypoint-exchange-v3</server>
+						<username>JahnaviJan</username>
+						<password>Jahnavi@2002</password>
+						<businessGroupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</businessGroupId>
+						<environment>Sandbox</environment>
+						<target>Cloudhub-US-East-2</target>
+						<applicationName>cicd20</applicationName>
+						<replicas>1</replicas>
+						<vCores>0.1</vCores>
+						<deploymentSettings>
+							<lastMileSecurity>false</lastMileSecurity>
+							<forwardSslSession>false</forwardSslSession>
+							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+						</deploymentSettings>
+					</cloudhub2Deployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-<distributionManagement>
-<repository>
-<id>anypoint-exchange-v3</id>
-<name>Anypoint Exchange</name>
-<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/fdb7171e-1a77-43bd-a4f2-4a075311b63b/maven</url>
-<layout>default</layout>
-</repository>
-</distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/fdb7171e-1a77-43bd-a4f2-4a075311b63b/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
@@ -104,8 +106,3 @@
 	</pluginRepositories>
 
 </project>
-
-
-
-
-
