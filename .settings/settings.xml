@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<settings>
+  <servers>
+	  <server>
+		  <id>anypoint-exchange-v3</id>
+		  <username>JahnaviJan</username>
+		  <password>Jahnavi@2002</password>
+	  </server>   
+
+  <!-- connected app's required scopes:
+  https://help.salesforce.com/s/articleView?id=001119708&type=1
+  -->
+  <!-- Cozzini Bro's -->
+  <!-- <server>   
+    <id>anypoint-exchange-v3</id> 
+    <username>~~~Client~~~</username>
+    <password>cf20b60a9c20494a9cc1c63d8baff3b2~?~D9B06c53cf09487A83aD0B08430dCdbd</password> 
+  </server> -->
+  <!-- Archima All Access -->
+  
+ <!-- <server>   
+<id>anypoint-exchange-v3</id> 
+<username>~~~Client~~~</username>
+<password>c60aada09ed34f2598dae48f26082b78~?~Eccc1Ddf6d02467495879aCA4f75D2DB</password> 
+</server> -->
+
+     <!-- <server>   
+    <id>anypoint-exchange-v3</id> 
+    <username>~~~Client~~~</username>
+    <password>9db23329e64a4bf59d88aceda41833d6~?~f551ACd05E834231B6789D8a9e299f69</password> 
+  </server>  -->
+
+   <!-- Traning <server>   
+    <id>anypoint-exchange-v3</id> 
+    <username>~~~Client~~~</username>
+    <password>99b73bfd02de42a2bf73a948b86e69cb~?~36ba61A44f734442a0184259e7dB376B</password> 
+  </server> -->
+   <!-- <server>   
+    <id>anypoint-exchange-v3</id> 
+    <username>~~~Client~~~</username>
+    <password>ab3d083fe6bc491caf69822ffc233b42~?~A3113833f5d44a84Bb1BcBB7102C3b18</password> 
+  </server> -->
+
+  <!-- <server> 
+        <id>anypoint-exchange-v3</id> 
+        <username>~~~client~~~</username> 
+        <password>c4e14e67ac994360b0b816e5654ae4ab~?~F096d550B6714914a6188ed32664b38c</password> 
+  </server> -->
+  <!-- <server>
+    <id>releasenexus</id>
+    <username>anthem.inc.nexus</username>
+    <password>EFkljTsG</password>
+  </server>
+  <server>
+    <id>snapshotnexus</id>
+    <username>anthem.inc.nexus</username>
+    <password>EFkljTsG</password>
+  </server> -->
+
+    <!-- Another sample, using keys to authenticate.
+  <server>
+  <id>siteServer</id>
+  <privateKey>/path/to/private/key</privateKey>
+  <passphrase>optional; leave empty if not used.</passphrase>
+  </server>
+      -->
+  </servers>
+
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+  </pluginGroups>
+
+  <profiles>
+    <profile>
+      <id>mule-extra-repos</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+
+      <repositories>
+        <repository>
+          <id>mule-public</id>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+        </repository>
+      </repositories>
+
+      <pluginRepositories>
+        <pluginRepository>
+          <id>mule-public</id>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+
+    <profile>
+      <id>Mule</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+
+      <repositories>
+        <repository>
+          <id>MuleRepository</id>
+          <name>MuleRepository</name>
+          <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+
+        <repository>
+          <id>MuleRepositoryPublic</id>
+          <name>MuleRepositoryPublic</name>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+		
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+			<layout>default</layout>
+		</repository>
+      </repositories>
+
+    </profile>
+  </profiles>
+</settings>
