@@ -12,3 +12,5 @@
 	<classpathentry kind="src" path="src/test/munit"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
+
+
