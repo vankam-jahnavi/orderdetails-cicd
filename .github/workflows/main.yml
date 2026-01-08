@@ -24,8 +24,8 @@ jobs:
       - name: Publish to Exchange
         run: |
           mvn deploy --settings .settings/settings.xml -DskipMunitTests \
-          -Danypoint.username="JahnaviJan" \
-          -Danypoint.password="Jahnavi@2002"
+          -Danypoint.username="${{ secrets.USER }}" \
+          -Danypoint.password="${{ secrets.PASS }}"
 
   deploydev:
     needs: build  
@@ -44,8 +44,8 @@ jobs:
       - name: Deploy to dev
         run: |
           mvn deploy --settings .settings/settings.xml -DskipMunitTests -DmuleDeploy \
-          -Danypoint.username="JahnaviJan" \
-          -Danypoint.password="Jahnavi@2002" \
-          -Danypoint.businessGroup="fdb7171e-1a77-43bd-a4f2-4a075311b63b" \
-          -Denv="Sandbox" \
+          -Danypoint.username="${{ secrets.USER }}" \
+          -Danypoint.password="${{ secrets.PASS }}" \
+          -Danypoint.businessGroup="${{ secrets.ANYPOINT_ORG_ID }}" \
+          -Denv="${{ secrets.ENV }}" \
           -Dappname="cicd20" 
