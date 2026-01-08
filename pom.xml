@@ -6,7 +6,7 @@
 
 	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
 	<artifactId>cicd20</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>cicd20</name>
@@ -35,7 +35,7 @@
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
-						<muleVersion>4.9.11</muleVersion>
+						<muleVersion>4.9.0</muleVersion>
 						<server>anypoint-exchange-v3</server>
 						<username>JahnaviJan</username>
 						<password>Jahnavi@2002</password>
@@ -106,4 +106,5 @@
 	</pluginRepositories>
 
 </project>
+
 
