@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>469e9fdb-66a0-442a-bd41-668b21a64f7c</groupId>
+	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
 	<artifactId>orderdetails-cicd</artifactId>
 	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
@@ -30,43 +30,37 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudhub2Deployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<provider>MC</provider>
-						<muleVersion>4.9.11</muleVersion>
-						<server>anypoint-exchange-v3</server>
-						<connectedAppClientId>c60aada09ed34f2598dae48f26082b78</connectedAppClientId>
-						<connectedAppClientSecret>Eccc1Ddf6d02467495879aCA4f75D2DB</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<businessGroupId>
-							469e9fdb-66a0-442a-bd41-668b21a64f7c</businessGroupId>
-						<environment>Dev</environment>
-						<target>Cloudhub-US-East-2</target>
-						<applicationName>orderdetails-cicd</applicationName>
-						<replicas>1</replicas>
-						<vCores>0.1</vCores>
-						<deploymentSettings>
-							<lastMileSecurity>false</lastMileSecurity>
-							<forwardSslSession>false</forwardSslSession>
-							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
-						</deploymentSettings>
-						<properties>
-							<anypoint.platform.client_id>606e9450c63b44b78170dda1735ff4e4</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>0126EA63B5d5490C8Ed8F0ac561FeFCE</anypoint.platform.client_secret>
-						</properties>
-					</cloudhub2Deployment>
-				</configuration>
+<cloudhub2Deployment>
+<uri>https://anypoint.mulesoft.com</uri>
+<provider>MC</provider>
+<muleVersion>4.9.11</muleVersion>
+<server>anypoint-exchange-v3</server>
+<username>JahnaviJan</username>
+<password>Jahnavi@2002</password>
+<businessGroupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</businessGroupId>
+<environment>Dev</environment>
+<target>Cloudhub-US-East-2</target>
+<applicationName>orderdetails-cicd</applicationName>
+<replicas>1</replicas>
+<vCores>0.1</vCores>
+<deploymentSettings>
+<lastMileSecurity>false</lastMileSecurity>
+<forwardSslSession>false</forwardSslSession>
+<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+</deploymentSettings>
+</cloudhub2Deployment>
+</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>anypoint-exchange-v3</id>
-			<name>Anypoint Exchange</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/469e9fdb-66a0-442a-bd41-668b21a64f7c/maven</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
+<distributionManagement>
+<repository>
+<id>anypoint-exchange-v3</id>
+<name>Anypoint Exchange</name>
+<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/fdb7171e-1a77-43bd-a4f2-4a075311b63b/maven</url>
+<layout>default</layout>
+</repository>
+</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
@@ -110,3 +104,4 @@
 	</pluginRepositories>
 
 </project>
+
