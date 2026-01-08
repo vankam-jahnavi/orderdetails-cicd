@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
-	<artifactId>cicd20-v2</artifactId>
-	<version>1.0.5</version>
+	<artifactId>cicd20-v3</artifactId>
+	<version>1.0.6</version>
 	<packaging>mule-application</packaging>
 
-	<name>cicd20-v2</name>
+	<name>cicd20-v3</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -106,6 +106,7 @@
 	</pluginRepositories>
 
 </project>
+
 
 
 
