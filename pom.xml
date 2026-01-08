@@ -37,10 +37,10 @@
 						<provider>MC</provider>
 						<muleVersion>4.9.0</muleVersion>
 						<server>anypoint-exchange-v3</server>
-						<username>JahnaviJan</username>
-						<password>Jahnavi@2002</password>
-						<businessGroupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</businessGroupId>
-						<environment>Sandbox</environment>
+						<username>${username}</username>
+						<password>${password}</password>
+						<businessGroupId>${businessGroup}</businessGroupId>
+						<environment>${env}</environment>
 						<target>Cloudhub-US-East-2</target>
 						<applicationName>cicd20</applicationName>
 						<replicas>1</replicas>
@@ -59,7 +59,7 @@
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/fdb7171e-1a77-43bd-a4f2-4a075311b63b/maven</url>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${businessGroup}/maven</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
@@ -106,6 +106,7 @@
 	</pluginRepositories>
 
 </project>
+
 
 
 
