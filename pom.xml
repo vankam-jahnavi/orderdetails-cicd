@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
-	<artifactId>orderdetails-cicd</artifactId>
-	<version>1.0.3</version>
+	<artifactId>orderdetails-cicd-v1</artifactId>
+	<version>1.0.4</version>
 	<packaging>mule-application</packaging>
 
 	<name>orderdetails-cicd</name>
@@ -104,6 +104,7 @@
 	</pluginRepositories>
 
 </project>
+
 
 
 
