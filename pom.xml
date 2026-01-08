@@ -38,7 +38,7 @@
 <username>JahnaviJan</username>
 <password>Jahnavi@2002</password>
 <businessGroupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</businessGroupId>
-<environment>Dev</environment>
+<environment>Sandbox</environment>
 <target>Cloudhub-US-East-2</target>
 <applicationName>orderdetails-cicd</applicationName>
 <replicas>1</replicas>
@@ -104,4 +104,5 @@
 	</pluginRepositories>
 
 </project>
+
 
