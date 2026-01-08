@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
+	<groupId>fdb7171e-1a77-43bd-a4f2-4a075311b63b</groupId>
 	<artifactId>cicd20</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
@@ -106,3 +106,4 @@
 	</pluginRepositories>
 
 </project>
+
